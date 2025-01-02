@@ -6,7 +6,12 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5173","https://coffee-store-client-sooty.vercel.app/"],
+    // optionsSuccessStatus: 200,
+  })
+);
 app.use(express.json());
 
 // console.log(process.env.DB_USER);
