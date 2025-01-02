@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 // middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://coffee-store-client-sooty.vercel.app/"],
+    origin: ["http://localhost:5173","https://coffee-store-client-sooty.vercel.app"],
     // optionsSuccessStatus: 200,
   })
 );
